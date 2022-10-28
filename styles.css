@@ -1,0 +1,262 @@
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+html{ 
+    scroll-behavior: smooth; 
+} 
+ 
+body{ 
+    font-family:'fira code',sans-serif; 
+    background:aliceblue;
+    color: #141414; 
+} 
+p{font-size: 1.3em;} 
+ 
+.container{ 
+    width: 100%; 
+    max-width: 1400px; 
+    display: flex; 
+    justify-content: inherit; 
+    margin: 0 auto; 
+    padding: 0 10px; 
+} 
+
+section{ 
+    text-align: center; 
+    padding: 90px 0; 
+
+} 
+/* -------------------Desde aca es el header------------------*/ 
+header{ 
+    background-color: #5569ec;
+    position: fixed; 
+    display: flex; 
+    transition: 0.3s; 
+    justify-content: space-between; 
+    height: 60px; 
+    width: 100%; 
+    z-index: 5; 
+ 
+} 
+header p{ 
+    text-align: center; 
+    padding: 15px 10px; 
+    color: aliceblue; 
+} 
+header nav{ 
+    display: flex; 
+} 
+  h1{
+    color: rgb(31, 86, 197);
+  }  
+header a{ /*caracteristicas de home-proyectos-contactos*/
+    text-decoration: none; 
+    color: aliceblue; 
+    font-size: 1em; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 5px; 
+    padding: 7px 5px; 
+     
+} 
+header a:hover{ 
+    color: #E36414; 
+} 
+/*-----------------------FIN HEADER-----------------------------*/ 
+ 
+/*---------------------HOME------------------*/ 
+.home{  
+    color:#274590 ;
+    display: block;
+    min-height: 100vh;
+} 
+
+.home .foto{
+    position: center;
+    margin-top: 20px;
+}
+.home .descripcion{
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+    margin-top: 30px;
+  
+}
+.home .home_foto{ 
+    height: 250px; 
+    border-radius: 50%; 
+    box-shadow: 2px 2px #212122;
+}
+
+/*------------------FIN HOME-------------------*/ 
+ 
+
+/*------------------proyectos ---------------------*/
+.proyectos{
+    background-color: rgb(116, 180, 236);
+    color: rgb(235, 223, 245);
+    text-align: center;
+}
+.proyectos .container{
+    padding: 80px 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+.proyectos h2{
+
+    margin-top: 0;
+    font-size: 3.2em;
+}
+.proyectos p{
+
+    display: none;
+}
+.proyectos button{
+    border: none;
+    color: rgb(247, 246, 248);
+    background-color: rgb(210, 111, 19);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.proyectos .carta{
+
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/citas6.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/f.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/portafolio-githubbst.jpg");
+
+}
+
+
+/*-----------------fin proyectos--------------------*/
+
+/*----------------contacto-------------------------*/
+.contacto{  
+    background-color:white;
+    min-height: 100vh;
+}
+
+.contacto .container{
+    width: 100%;
+    display: inherit;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contacto h2{
+    color: #18388a;
+    text-align: left;
+    font-weight: bold;
+}
+.contacto h3{
+    color:rgb(1, 17, 31) ;
+    text-align: left;
+    margin-top: 20px;
+}
+.contacto .grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contacto a{
+    text-decoration: none;
+}
+.contacto .contacto_item{
+    color: #141414;
+    padding: 40px;
+    transition: all 0.3s;
+}
+
+/*-----------------fin contacto--------------------*/
+
+
+/*---------------------FOTER-----------------------------*/ 
+
+footer .container{
+    min-height: 20vh;
+
+}
+footer p{
+    text-align: center;
+    font-size: 12px;
+    display: inherit;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+/*---------------------fin footer-------------------------*/
+
+
+/* -------------Aca es para la version web-------------*/
+@media  (min-width: 850px){
+
+   /*---------------------HOME------------------*/ 
+.home{  
+    color:#274590 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 100vh;
+} 
+
+.home .foto{
+    position: center;
+    margin-top: 60px;
+}
+.home .descripcion{
+    height: 100px;
+    margin-top: 250px;
+}
+.home h1{
+    margin: 8px auto;
+    font-size: 35px;
+}
+.home .home_foto{ 
+    height: 325px; 
+    border-radius: 50%; 
+    box-shadow: 2px 2px #212122;
+}
+
+/*------------------FIN HOME-------------------*/ 
+
+
+}
